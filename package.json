@@ -1,0 +1,27 @@
+{
+  "name": "factorize-sh",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "build:marketing": "node -e \"console.log('Static marketing assets are ready')\"",
+    "check": "tsc --noEmit",
+    "deploy": "wrangler pages deploy public --project-name factorize-sh",
+    "build": "node -e \"console.log('Static marketing assets are ready')\"",
+    "test": "npm run check && npm run build"
+  },
+  "dependencies": {
+    "hono": "^4.11.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260910.1",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.44.0"
+  },
+  "packageManager": "npm@11.19.0",
+  "engines": {
+    "node": ">=24.12.0",
+    "npm": ">=11.19.0"
+  }
+}
