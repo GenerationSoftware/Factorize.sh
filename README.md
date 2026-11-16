@@ -27,3 +27,7 @@ previews for other branches. The custom domain is `factorize.sh`.
 
 For a manual upload with Cloudflare credentials, run `npm run deploy`.
 Changes to this site deploy independently of the application repository.
+
+The previous `factorize-marketing` Pages project is retained for rollback with
+automatic deployments disabled. The apex DNS record now targets
+`factorize-sh.pages.dev`; app and documentation hosting are managed separately.
